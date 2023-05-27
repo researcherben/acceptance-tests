@@ -1,0 +1,8 @@
+# https://apptainer.org/docs/user/main/definition_files.html
+Bootstrap: yum
+OSVersion: 8
+MirrorURL: http://packages.oit.ncsu.edu/centos/8-stream/BaseOS/x86_64/os/
+Include: yum
+%post
+    yum install -y python3
+
